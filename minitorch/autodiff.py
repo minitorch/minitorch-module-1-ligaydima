@@ -64,9 +64,9 @@ def topological_sort(variable: Variable) -> Iterable[Variable]:
         Non-constant Variables in topological order starting from the right.
     """
     used = set()
-    topsort = []
+    topsort: List[Variable] = []
 
-    def dfs(variable):
+    def dfs(variable: Variable):
         if variable.is_constant() or variable.unique_id in used:
             return
         used.add(variable.unique_id)

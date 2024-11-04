@@ -17,7 +17,7 @@ from .scalar_functions import (
     Neg,
     ReLU,
     ScalarFunction,
-    Sigmoid, wrap_tuple,
+    Sigmoid,
 )
 
 ScalarLike = Union[float, int, "Scalar"]
@@ -205,5 +205,5 @@ but was expecting derivative f'=%f from central difference."""
             1e-2,
             1e-2,
             err_msg=err_msg
-                    % (str([x.data for x in scalars]), x.derivative, i, check.data),
+            % (str([x.data for x in scalars]), x.derivative, i, check.data),
         )

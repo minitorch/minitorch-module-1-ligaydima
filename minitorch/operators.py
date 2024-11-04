@@ -6,7 +6,6 @@ import math
 from typing import Callable, Iterable
 
 
-
 def mul(a, b):
     return float(a * b)
 
@@ -81,7 +80,6 @@ def inv_back(a, b):
 # $f(x) =  \frac{1.0}{(1.0 + e^{-x})}$ if x >=0 else $\frac{e^x}{(1.0 + e^{x})}$
 # For is_close:
 # $f(x) = |x - y| < 1e-2$
-
 
 
 def map(iterable: Iterable, function: Callable):
